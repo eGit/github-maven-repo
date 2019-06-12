@@ -24,4 +24,4 @@ git push
 
 
 # Create maven repo in Gradle-Build
-project.getRepositories().maven((MavenArtifactRepository m) -> m.setUrl("https://github.com/eGit/github-maven-repo/raw/master"));
+make.getRepositories().maven(m -> m.setUrl("https://github.com/eGit/github-maven-repo/raw/master"));
