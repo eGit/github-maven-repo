@@ -14,7 +14,7 @@
 
 5. check HOME_DIR/github-maven-repo if everything worked
 
-### 6. Commit and push repo updates to remote Github repo
+6. Commit and push repo updates to remote Github repo
 
 git add -A
 
@@ -24,4 +24,4 @@ git push
 
 
 # Create maven repo in Gradle-Build
-project.getRepositories().maven((MavenArtifactRepository m) -> m.setUrl("https://github.com/eGit/gradle-dev-maven/raw/master"));
+project.getRepositories().maven((MavenArtifactRepository m) -> m.setUrl("https://github.com/eGit/github-maven-repo/raw/master"));
