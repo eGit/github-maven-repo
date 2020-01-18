@@ -1,18 +1,18 @@
-# github-maven-repo
+# maven-repo-gradle-dev
 
 
-1. clone gradle-dev-maven from Github to HOME_DIR: 
+1. clone maven-repo-gradle-dev from Github to HOME_DIR: 
   
-  > git clone https://github.com/eGit/github-maven-repo.git
+  > git clone https://github.com/eGit/maven-repo-gradle-dev.git
 
 
 2. git clone to Desktop: gradle-dev from Bitbucket and import projects to Eclipse
 3. Edit gradle-dev/make/src/de/genflux/Build.java - especially GRADLE_VERSION
-4. Create gradle dist .jar and -sources.jar and copy to HOME_DIR/github-maven-repo: 
+4. Create gradle dist .jar and -sources.jar and copy to HOME_DIR/maven-repo-gradle-dev: 
 
   > gradle tasks publishMyBigFatGradleJarPublicationToMyRepoRepository
 
-5. check HOME_DIR/github-maven-repo if everything worked
+5. check HOME_DIR/maven-repo-gradle-dev if everything worked
 
 6. Commit and push repo updates to remote Github repo
 
@@ -25,15 +25,15 @@ git push
 
 # Create maven repo in Gradle-Build
 
-String url = "https://raw.githubusercontent.com/eGit/github-maven-repo/master";
+String url = "https://raw.githubusercontent.com/eGit/maven-repo-gradle-dev/master";
 
 or
 
-String url = "https://github.com/eGit/github-maven-repo/raw/master";
+String url = "https://github.com/eGit/maven-repo-gradle-dev/raw/master";
 
 
 java: make.getRepositories().maven(m -> m.setUrl(url));
-groovy: maven { url "https://github.com/eGit/github-maven-repo/raw/master" }
+groovy: maven { url "https://github.com/eGit/maven-repo-gradle-dev/raw/master" }
 
 groovy: apply plugin: 'java'
 kotlin: apply(plugin = "java")
