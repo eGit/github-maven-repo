@@ -27,9 +27,8 @@ git push
 
 # Create maven repo in Gradle-Build (utilized by other project: gradle-init-java-project)
 
-String url = "https://raw.githubusercontent.com/eGit/maven-repo-gradle-dev/master";
-or
-String url = "https://github.com/eGit/maven-repo-gradle-dev/raw/master";
+Either: String url = "https://raw.githubusercontent.com/eGit/maven-repo-gradle-dev/master";
+Or: String url = "https://github.com/eGit/maven-repo-gradle-dev/raw/master";
 java: make.getRepositories().maven(m -> m.setUrl(url));
 
 groovy: maven { url "https://github.com/eGit/maven-repo-gradle-dev/raw/master" }
