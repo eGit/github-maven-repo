@@ -34,6 +34,7 @@ Or: String url = "https://github.com/eGit/maven-repo-gradle-dev/raw/master";
 java: make.getRepositories().maven(m -> m.setUrl(url));
 
 groovy: maven { url "https://github.com/eGit/maven-repo-gradle-dev/raw/master" }
+
 implementation "de.genflux:gradle-dev:5.4.1"
 
 groovy: apply plugin: 'java'
